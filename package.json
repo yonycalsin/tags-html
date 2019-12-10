@@ -1,0 +1,39 @@
+{
+   "name": "tags-html",
+   "version": "1.0.0",
+   "description": "📖 List of all standard HTML5 tags 😄",
+   "main": "dist/tags-html.js",
+   "types": "index.d.ts",
+   "scripts": {
+      "tsc": "tsc -w",
+      "start": "nodemon dist/tags-html.js"
+   },
+   "keywords": [
+      "tags-html",
+      "w3c",
+      "html-tags",
+      "elements",
+      "all-tags-html",
+      "html",
+      "tags-list",
+      "self-closing",
+      "html-tags-complete",
+      "html5",
+      "tags"
+   ],
+   "author": "Yoni Calsin <helloyonicb@gmail.com>",
+   "license": "MIT",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/yonicb/tags-html"
+   },
+   "devDependencies": {
+      "@types/node": "^12.12.17",
+      "nodemon": "^2.0.1",
+      "tslint": "^5.20.1"
+   },
+   "bugs": {
+      "url": "https://github.com/yonicb/tags-html/issues"
+   },
+   "homepage": "https://github.com/yonicb/tags-html#readme"
+}
