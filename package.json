@@ -5,8 +5,9 @@
    "main": "dist/tags-html.js",
    "types": "index.d.ts",
    "scripts": {
-      "tsc": "tsc -w",
-      "start": "nodemon dist/tags-html.js"
+      "start": "gulp",
+      "build": "gulp prod",
+      "test": "jest"
    },
    "keywords": [
       "tags-html",
@@ -28,9 +29,20 @@
       "url": "https://github.com/yonicb/tags-html"
    },
    "devDependencies": {
-      "@types/node": "^12.12.17",
-      "nodemon": "^2.0.1",
-      "tslint": "^5.20.1"
+      "@types/gulp": "^4.0.6",
+      "@types/gulp-typescript": "^2.13.0",
+      "@types/jest": "^24.0.25",
+      "@types/node": "^12.12.22",
+      "del": "^5.1.0",
+      "gulp": "^4.0.2",
+      "gulp-sourcemaps": "^2.6.5",
+      "gulp-typescript": "^6.0.0-alpha.1",
+      "gulp-uglify": "^3.0.2",
+      "jest": "^24.9.0",
+      "ts-jest": "^24.2.0",
+      "tslint": "^5.20.1",
+      "typescript": "^3.7.4",
+      "vinyl-buffer": "^1.0.1"
    },
    "bugs": {
       "url": "https://github.com/yonicb/tags-html/issues"
