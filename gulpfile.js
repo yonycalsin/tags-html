@@ -18,7 +18,7 @@ function dev() {
         .js.pipe(gulp.dest("dist"))
         .pipe(buffer())
         .pipe(sourcemaps.init({ loadMaps: true }))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(sourcemaps.write('./'))
 }
 function build() {
@@ -26,10 +26,10 @@ function build() {
         .pipe(tsProject())
         .js.pipe(gulp.dest("dist"))
         .pipe(buffer())
-        .pipe(sourcemaps.init({ loadMaps: true }))
+        .pipe(sourcemaps.init({ loadMaps: false }))
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
-    // .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest("./dist"))
 }
 function message(cb, msg = `
     ========================
@@ -43,7 +43,7 @@ function message(cb, msg = `
 }
 gulp.task("clean", clean)
 gulp.task("default", function () {
-    return gulp.watch('./src/index.ts', gulp.series(message, dev))
+    return gulp.watch('./**/*.ts', gulp.series(message, dev))
 })
 
 gulp.task("prod", gulp.series(build, clean, () => message(null, `
