@@ -2,7 +2,7 @@
    "name": "tags-html",
    "version": "1.0.1",
    "description": "📖 List of all standard HTML5 tags 😄",
-   "main": "dist/tags-html.js",
+   "main": "dist/src/index.js",
    "types": "index.d.ts",
    "scripts": {
       "start": "gulp",
