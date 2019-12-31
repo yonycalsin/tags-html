@@ -1,0 +1,18 @@
+# Folders
+/src
+/.vscod
+/node_modules
+/test
+/lib
+/.vscode
+
+# Files
+.gitignore
+.npmrc
+*.map
+gulpfile.js
+tslint.json
+tsconfig.json
+.npmignore
+jest.config.js
+demo.js
