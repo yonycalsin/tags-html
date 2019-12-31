@@ -10,3 +10,5 @@ export declare const tabularTags: string[];
 export declare const formsTags: string[];
 export declare const interactiveTags: string[];
 export declare const TagsHtml: string[];
+declare const allTags: string[];
+export default allTags
