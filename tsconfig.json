@@ -1,18 +1,13 @@
 {
-   "compilerOptions": {
-      "module": "commonjs",
-      "declaration": true,
-      "removeComments": true,
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
-      "target": "es2017",
-      "sourceMap": false,
-      "outDir": "./dist",
-      "baseUrl": "./",
-      "incremental": true
-   },
-   "exclude": [
-      "node_modules",
-      "dist"
-   ]
+  "files": [
+    "src/index.ts",
+    "lib/*.ts"
+  ],
+  "noImplicitAny": true,
+  "target": "es2015",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "removeComments": true,
+  }
 }
