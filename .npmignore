@@ -16,3 +16,4 @@ tsconfig.json
 .npmignore
 jest.config.js
 demo.js
+.vscodeignore
