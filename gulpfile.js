@@ -26,9 +26,7 @@ function build() {
         .pipe(tsProject())
         .js.pipe(gulp.dest("dist"))
         .pipe(buffer())
-        .pipe(sourcemaps.init({ loadMaps: false }))
         .pipe(uglify())
-        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest("./dist"))
 }
 function message(cb, msg = `
