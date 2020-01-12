@@ -3,7 +3,7 @@
 </p>
 
 <p align="center" style="max-width: 600px; margin: 10px auto;">
-🎁 Utility to analyze a byte to unit chain and vice versa, unit converter ‍🌈, from KB to YB and includes many functions that will allow you to make your project more professional
+📖 List of all standard HTML5 tags 😄
 </p>
 <p align="center" style="max-width: 450px; margin: auto;">
    <a href="https://github.com/yonicb/tags-html"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" /></a>
@@ -22,6 +22,13 @@
    <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
 </p>
 
+- [🌐 Description](#🌐-description)
+- [📦 Installation](#📦-installation)
+- [▶️ Getting started](#▶️-getting-started)
+  - [Options](#options)
+- [🎩 Stay in touch](#🎩-stay-in-touch)
+- [📜 License](#📜-License)
+
 ## 🌐 Description
 
 <p>
@@ -33,12 +40,12 @@ Under the hood, cbytes uses javascript, but also provides compatibility with a w
 To start using cbytes, you must install it with the npm or yarn package manager, as shown in the next section,
 </p>
 
-``` properties
+```ts
 // To install using npm
-npm install cbytes -S
+npm install --save tags-html
 
 // To install using yarn
-yarn add cbytes
+yarn add tags-html
 ```
 
 ## ▶️ Getting started
@@ -46,11 +53,11 @@ yarn add cbytes
 To use the powerful function offered by cbytes is very simple, first we will import the package. Example:</p>
 
 ```js
-// If you use nodejs, reajs, vuejs, or angular
-const cbytes = require("cbytes");
+// If you use ES5-
+const htmlTags = require("tags-html");
 
-// If you use ES6+
-import cbytes from "cbytes";
+// If you use ES6+ or Typescript
+import htmlTags from "tags-html";
 ```
 
 <p>
@@ -59,76 +66,81 @@ Example
 
 
 ```js
-cbytes.sizeToObject(6442450944)
-// return: { unit: 'GB', size: 6, format: '6GB' }
+// Import
+import htmlTags from "tags-html";
 
-cbytes.objectToFormat({ unit: 'TB', size: 6.5, format: '6.5TB' })
-// Return: '6.5TB'
+const allTags = htmlTags
+/* Return: 
+[
+  'html',
+  'head',
+  'title',
+  'base',
+  'link',
+  'meta',
+  'style',
+  'script',
+  'noscript',
+  'body',
+  'section',
+  'nav',
+  'article',
+  'aside',
+  'h1',
+  'h2',
+  'h3',
+  'h4',
+  'h5',
+  'h6',
+  'header',
+  'footer',
+  ... more items,
+*/
 
-cbytes.objectToFormat({ unit: 'KB', size: 7, format: '7KB' }, {
-    separator: " "
-})
-// Return: '7 KB'
+const interactiveTags = htmlTags.interactiveTags
+// Return: [ 'details', 'summary', 'command', 'menu' ]
 
+const formsTags = htmlTags.formsTags
+/* Return: [
+    'form',     'fieldset',
+    'legend',   'label',
+    'input',    'button',
+    'select',   'datalist',
+    'optgroup', 'option',
+    'textarea', 'keygen',
+    'output',   'progress',
+    'meter'
+  ]
+*/
 
-cbytes.formatToObject("7KB")
-// Return: { unit: 'KB', size: 7, format: '7KB' }
-
-
-cbytes(6291456)
-// Return: '6MB'
-
-cbytes(1000)
-// Return: '1000B'
-
-cbytes(6.88456654, {
-    everyThousand: ' '
-})
-// Return: '6.88 456 654B'
-
-/**
- * Options to convert from bytes to units
- * */
-cbytes(6291456, {
-  separator: ' ',
-  decimals: 2
-})
-// Return: '6.00 MB'
-
-
-cbytes('6GB')
-// Return: 6442450944
+const tabularTags = htmlTags.tabularTags
+/* Return: [
+    'table',    'caption',
+    'colgroup', 'col',
+    'tbody',    'thead',
+    'tfoot',    'tr',
+    'td',       'th'
+  ]
+*/
 
 ```
 
-### Multiples using the prefixes of the International System
-
-| Unit  | Bytes                             | Factor        |
-|----|-----------------------------------|---------------|
-| B  |                 1                 | 2<sup>0</sup> |
-| KB |                1024               | 2<sup>10</sup> |
-| MB |             1 048 576             | 2<sup>20</sup> |
-| GB |           1 073 741 824           | 2<sup>30</sup> |
-| TB |         1 099 511 627 776         | 2<sup>40</sup> |
-| PB |       1 125 899 906 842 624       | 2<sup>50</sup> |
-| EX |     1 152 921 504 606 846 976     | 2<sup>60</sup> |
-| ZB |   1 180 591 620 717 411 303 424   | 2<sup>70</sup> |
-| YB | 1 208 925 819 614 629 174 706 176 | 2<sup>80</sup> |
-
-### Arguments
-
-| Name    | Type     | Description        |
-|---------|----------|--------------------|
-| value   | `number` \| `string` | Value in bytes     |
-| options | `Object` | Conversion options |
-
 ### Options
 
-| Property          | Type   | Description                                                                             |
-|-------------------|--------|-----------------------------------------------------------------------------------------|
-| decimals | `number` | Maximum number of decimals to include in the output. Default value is all decimals |
-| everyThousand | `string` | Example of values: `' '`, `','` and `.`... Default value to `''`. |
-| separator | `string` | Separator to use between number and unit. Default value to `''`. |
+| Group    | Count     |
+|---------|----------|
+| rootTags   | `1` |
+| metadataTags | `6` |
+| scriptingTags   | `2` |
+| sectionsTags   | `15` |
+| groupContentTags   | `13` |
+| textSemanticsTags   | `20` |
+| editionsTags   | `2` |
+| embeddedTags   | `14` |
+| tabularTags   | `10` |
+| formsTags   | `15` |
+| interactiveTags   | `4` |
+| ***total*** |  `111`|
 
 
 ## 🎩 Stay in touch
