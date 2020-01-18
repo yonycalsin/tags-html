@@ -67,7 +67,7 @@ Example
 
 ```js
 // Import
-import htmlTags from "tags-html";
+import htmlTags, { interactiveTags, formsTags, tabularTags } from "tags-html";
 
 const allTags = htmlTags
 /* Return: 
@@ -97,10 +97,10 @@ const allTags = htmlTags
   ... more items,
 */
 
-const interactiveTags = htmlTags.interactiveTags
+const interactiveTags = interactiveTags
 // Return: [ 'details', 'summary', 'command', 'menu' ]
 
-const formsTags = htmlTags.formsTags
+const formsTags = formsTags
 /* Return: [
     'form',     'fieldset',
     'legend',   'label',
@@ -113,7 +113,7 @@ const formsTags = htmlTags.formsTags
   ]
 */
 
-const tabularTags = htmlTags.tabularTags
+const tabularTags = tabularTags
 /* Return: [
     'table',    'caption',
     'colgroup', 'col',
