@@ -25,7 +25,7 @@
 - [🌐 Description](#🌐-description)
 - [📦 Installation](#📦-installation)
 - [▶️ Getting started](#▶️-getting-started)
-  - [Options](#options)
+  - [⛷️ Options](#options)
 - [🎩 Stay in touch](#🎩-stay-in-touch)
 - [📜 License](#📜-License)
 
@@ -125,7 +125,7 @@ const tabularTags = htmlTags.tabularTags
 
 ```
 
-### Options
+### ⛷️ Options
 
 | Group    | Count     |
 |---------|----------|
