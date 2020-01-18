@@ -1,6 +1,6 @@
 {
    "name": "tags-html",
-   "version": "1.0.2",
+   "version": "1.0.3",
    "description": "📖 List of all standard HTML5 tags 😄",
    "main": "dist/src/index.js",
    "types": "index.d.ts",

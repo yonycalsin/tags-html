@@ -1,5 +1,5 @@
 /*!
- * Tags Html v1.0.2 (https://github.com/yonicb/tags-html/)
+ * Tags Html v1.0.3 (https://github.com/yonicb/tags-html/)
  * Copyright 2019 The Tags Html Author
  * Copyright 2019 Yoni Calsin.
  * Licensed under MIT (https://github.com/yonicb/tags-html/blob/master/LICENSE)
